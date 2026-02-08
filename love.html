@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Special Surprise ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+  text-align:center;
+  color:#fff;
+}
+.container{
+  padding:40px 20px;
+}
+h1{
+  font-size:32px;
+  margin-bottom:10px;
+}
+p{
+  font-size:18px;
+}
+.btn{
+  display:block;
+  background:#fff;
+  color:#ff5e78;
+  margin:15px auto;
+  padding:14px;
+  width:80%;
+  max-width:300px;
+  border-radius:30px;
+  font-size:18px;
+  border:none;
+  cursor:pointer;
+}
+.btn:hover{
+  background:#ffe3e8;
+}
+#surprise{
+  margin-top:25px;
+  font-size:20px;
+  min-height:50px;
+}
+.footer{
+  margin-top:40px;
+  font-size:14px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Hey Love ❤️</h1>
+  <p>Purpose Day ke liye tumhare liye dher saare surprises ✨</p>
+
+  <button class="btn" onclick="showMsg(1)">🎁 Surprise 1</button>
+  <button class="btn" onclick="showMsg(2)">💌 Surprise 2</button>
+  <button class="btn" onclick="showMsg(3)">🌹 Surprise 3</button>
+  <button class="btn" onclick="showMsg(4)">💖 Surprise 4</button>
+  <button class="btn" onclick="showMsg(5)">🥰 Final Surprise</button>
+
+  <div id="surprise"></div>
+
+  <div class="footer">
+    Made with ❤️ just for you
+  </div>
+</div>
+
+<script>
+function showMsg(n){
+  const msgs = {
+    1: "Tum meri zindagi ka sabse pyara surprise ho 😘",
+    2: "Har din ka purpose sirf tum ho ❤️",
+    3: "Tumhari ek muskaan meri saari thakaan mita deti hai 🌹",
+    4: "Main tumhare saath har kal, har sapna jeena chahta hoon 💖",
+    5: "Purpose Day nahi, meri POORI LIFE tumhare naam 🥰💍"
+  };
+  document.getElementById("surprise").innerHTML = msgs[n];
+}
+</script>
+
+</body>
+</html>
